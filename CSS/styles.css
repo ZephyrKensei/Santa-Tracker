@@ -9,13 +9,13 @@
 }
 
 .navbar.sticky {
-  background: var(--white);
-  box-shadow: 0 0 20px rgba(48,63,100,0.2);
+  background: var(--color-red);
+  box-shadow: 0 0 20px rgba(48, 63, 100, 0.2);
 }
 
 .navbar.sticky .nav-toggler span,
 .navbar.sticky .navbrand {
-  color: var(--font-color-dark);
+  color: var(--font-color-light);
 }
 
 .nav-toggler {
@@ -44,6 +44,13 @@
 .navigation {
   display: flex;
   align-items: center;
+  justify-content: center;
+  padding: 6px 0;
+}
+
+.container > span {
+  color: var(--white);
+  margin: 0 70px 0 10px;
 }
 
 .navbrand {
@@ -58,7 +65,7 @@
 .nav-link a {
   color: var(--white);
   font-size: 0.8125rem;
-  font-weight: 600;
+  font-weight: 400;
   font-family: "Hind", sans-serif;
   text-transform: uppercase;
   margin-right: var(--size40);
@@ -69,7 +76,7 @@
 
 .bg-header,
 .vid-demo {
-  background-color: var(--footer);
+  background-color: var(--bg-color-red);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 20%;
@@ -82,13 +89,16 @@
   background-image: url("../assets/imgs/bg-header-1.jpg");
   padding: var(--size150) 0;
 }
-.vid-demo{background-image: url("../assets/imgs/bg-demo.jpg");}
+.vid-demo {
+  background-image: url("../assets/imgs/bg-demo.jpg");
+}
 
 .bg-header::before {
   background-image: linear-gradient(
     30deg,
-    rgba(21,27,38, 0.8) 0%,
-    rgba(0,0,0,0.2) 100%);
+    rgba(21, 27, 38, 0.8) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
   position: absolute;
   content: "";
   top: 0;
@@ -135,15 +145,21 @@
 }
 
 /* Solution */
-.vid-demo {text-align: center;}
-.vid-demo .block {padding-right: 0;}
+.vid-demo {
+  text-align: center;
+}
+.vid-demo .block {
+  padding-right: 0;
+}
 
-.vid-demo .container {display: block;}
+.vid-demo .container {
+  display: block;
+}
 
 .vid-demo .block h2,
 .vid-demo .block p {
   color: var(--white);
-  margin:var(--size50) 0;
+  margin: var(--size50) 0;
 }
 
 /* Pricing */
@@ -168,8 +184,12 @@
   padding: var(--size40);
 }
 
-.price-card .checked {color: var(--success)}
-.price-card .times {color: var(--danger)}
+.price-card .checked {
+  color: var(--success);
+}
+.price-card .times {
+  color: var(--danger);
+}
 
 .price-card.featured {
   box-shadow: 0 10px 20px rgba(82, 179, 255, 0.2);
@@ -183,7 +203,9 @@
   font-weight: 600;
 }
 
-.price-card hr {margin: 2rem 0 1rem;}
+.price-card hr {
+  margin: 2rem 0 1rem;
+}
 
 .price {
   color: var(--font-color-link);
@@ -193,17 +215,25 @@
 
 .price-card h3,
 .price-card .price,
-.price-card .billed {text-align: center;}
+.price-card .billed {
+  text-align: center;
+}
 
-.price-card li {margin-bottom: var(--size20);}
+.price-card li {
+  margin-bottom: var(--size20);
+}
 
 .price-card .icon {
-  float:right;
+  float: right;
   font-weight: 400;
 }
 
-.plan-btn-wrapper { text-align: center; }
-.plan-btn-wrapper a { width: 100% }
+.plan-btn-wrapper {
+  text-align: center;
+}
+.plan-btn-wrapper a {
+  width: 100%;
+}
 
 /* Testimonials */
 
@@ -236,7 +266,9 @@
   grid-column: 1 / 2;
 }
 
-.test-card.md .bottom p {font-size: var(--size14);}
+.test-card.md .bottom p {
+  font-size: var(--size14);
+}
 
 .test-card .top {
   display: flex;
@@ -250,7 +282,9 @@
   margin-right: var(--size20);
 }
 
-.test-card.lg img.profile {width: 5rem}
+.test-card.lg img.profile {
+  width: 5rem;
+}
 
 .top h4 {
   margin-top: 0;
@@ -311,11 +345,8 @@
   width: var(--size30);
 }
 
-
-
 #scroll {
-  background-image: linear-gradient(
-90deg, #9ccefe 0, #94aafd 100%);
+  background-image: linear-gradient(90deg, #9ccefe 0, #94aafd 100%);
   background-color: transparent;
   color: var(--white);
   font-size: var(--size20);
