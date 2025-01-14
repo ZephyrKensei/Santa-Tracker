@@ -1,0 +1,136 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --font-color-base: #666;
+  --font-color-dark: #212529;
+  --font-color-light: #b0aebe;
+  --font-color-link: #57a6ff;
+  --bg-color-red: #8f0002d4;
+  --color-red: #8F0002l;
+  --footer: #34314b;
+  --footer-base: #2e2b45;
+  --contrast: rgba(246, 248, 249, 0.8);
+  --success: #64ecf5;
+  --danger: #ff8b8d;
+  --grad-1: #a1ecff;
+  --grad-2: #7dbcff;
+
+  --size10: 0.625rem;
+  --size14: 0.875rem;
+  --size16: 1rem;
+  --size18: 1.125rem;
+  --size20: 1.25rem;
+  --size30: 1.875rem;
+  --size40: 2.5rem;
+  --size50: 3.125rem;
+  --size100: 6.25rem;
+  --size150: 9.375rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: var(--size14);
+  line-height: 1.6;
+  letter-spacing: 0;
+  color: var(--font-color-base);
+  margin: 0;
+  padding: 0;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  width: var(--size40);
+  height: var(--size40);
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: var(--font-color-dark);
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  padding: 0.75rem 2.8125rem;
+  transition: ease-in-out 0.3s;
+}
+
+.btn-primary {
+  background-color: var(--color-red);
+  border: 1px solid var(--grad-1);
+  box-shadow: 0 10px 20px rgba(162, 236, 255, 0.5);
+  transition: ease-in-out 0.3s;
+  color: var(--white);
+}
+
+.btn-white {
+  background-color: var(--white);
+  color: var(--color-red);
+  box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.35);
+}
+
+@media (min-width: 768px) {
+  .pricing-table,
+  .test-grid {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  footer .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
