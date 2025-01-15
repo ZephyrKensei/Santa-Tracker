@@ -20,8 +20,10 @@
         <button class="nav-toggler" aria-expanded="false" aria-controls="navbarDropdown">
           <span>&#9776;</span>
         </button>
-        <img src="assets/logo.svg" alt="GiftChain.ai logo" class="logo">
-        <span>GiftChain.ai</span>
+        <div class="navbrand">
+          <img src="assets/logo.svg" alt="GiftChain.ai logo" class="logo">
+          <span class="title">GiftChain.ai</span>
+        </div>
         <ul class="navigation">
           <li class="nav-link"><a href="#product">Product</a></li>
           <li class="nav-link"><a href="#solution">Solution</a></li>
@@ -43,15 +45,17 @@
     <header class="bg-header">
       <div class="container">
         <div class="hero-wrapper">
-          <h1 class="hero-header">
+          <div class="hero-header">
+            <h1 class="hero-header">
             AI-Powered Blockchain for Effortless Gift Management
-          </h1>
-          <p>Scaling holiday logistics through a decentralized proof-of-work protocol with autonomous LLM-powered agents.</p>
+            </h1>
+            <p>Scaling holiday logistics through a decentralized proof-of-work protocol with autonomous LLM-powered agents.</p>
+          </div>
           <button aria-label="Try GiftChain.ai for free"
             class="btn btn-white">Try for free</button>
           <button aria-label="Watch a demo of GiftChain.ai"
             class="btn btn-primary">Watch a demo</button>
-          <img src="./assets/dashboard.png" alt="Dashboard screenshot of GiftChain.ai">
+          <img src="./assets/dashboard.png" alt="Dashboard screenshot of GiftChain.ai" class="hero-dashboard-img">
         </div>
       </div>
     </header>
@@ -98,7 +102,7 @@
         <p>No need to worry about your gift being lost or delivered to the wrong child. We’ll handle every single one.</p>
         <p>More than 10,000 elves have tried GiftChain.ai!</p>
         <button aria-label="Try GiftChain.ai for free">Try for free</button>
-        <img src="./assets/dashboard.png" alt="Dashboard screenshot of GiftChain.ai">
+        <img src="./assets/dashboard.png" alt="Dashboard screenshot of GiftChain.ai" class="hero-dashboard-img">
     </section>
 
     <!-- Pricing -->
