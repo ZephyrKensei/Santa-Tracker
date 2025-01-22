@@ -71,12 +71,12 @@
 
 .hero-header {
   color: var(--white);
-  width: 560px;
+  max-width: 610px;
   margin: auto;
 }
 
-.hero-header > p {
-  padding: 15px;
+.hero-header > h1 {
+  font-size: var(--size40);
 }
 
 .hero-dashboard-img {
@@ -85,6 +85,11 @@
 }
 
 /* Platform */
+
+.platform-text > h2 {
+  font-size: 36px;
+  line-height: 45px;
+}
 
 .benefits {
   display: grid;
@@ -96,7 +101,7 @@
 
 .key-benefits {
   text-align: center;
-  margin-top: 350px;
+  margin-top: 300px;
 }
 
 .key-block {
@@ -115,28 +120,36 @@
 }
 
 /* Solution */
-.vid-demo {
-  text-align: center;
-}
-.vid-demo .block {
-  padding-right: 0;
+
+.solution {
+  display: flex;
+  text-align: left;
 }
 
-.vid-demo .container {
-  display: block;
+.sol-section {
+  max-width: 500px;
+  margin: auto;
 }
 
-.vid-demo .block h2,
-.vid-demo .block p {
-  color: var(--white);
-  margin: var(--size50) 0;
+.sol-section > h2 {
+  font-size: var(--size40);
+  line-height: 78px;
+}
+
+.sol-section > button {
+  margin: 0;
+}
+
+.ellipse {
+  position: absolute;
+  z-index: -1;
+  width: 300px;
+  margin-left: 810px;
 }
 
 /* Pricing */
 
 .block.pricing-header {
-  text-align: center;
-  padding-right: 0;
   margin: var(--size100) 0;
 }
 
@@ -152,13 +165,8 @@
   background-color: var(--white);
   border-radius: 8px;
   padding: var(--size40);
-}
-
-.price-card .checked {
-  color: var(--success);
-}
-.price-card .times {
-  color: var(--danger);
+  box-shadow: 0px 10px 56px 0px rgba(0, 0, 0, 0.08);
+  border: solid 1px black;
 }
 
 .price-card.featured {
@@ -168,8 +176,7 @@
 
 .price-card h3 {
   margin-top: var(--size40);
-  font-size: var(--size18);
-  color: var(--font-color-dark);
+  font-size: var(--size20);
   font-weight: 600;
 }
 
@@ -178,24 +185,18 @@
 }
 
 .price {
-  color: var(--font-color-link);
   font-size: var(--size30);
   font-weight: 600;
 }
 
-.price-card h3,
-.price-card .price,
-.price-card .billed {
-  text-align: center;
-}
-
 .price-card li {
   margin-bottom: var(--size20);
+  text-align: left;
 }
 
 .price-card .icon {
-  float: right;
   font-weight: 400;
+  color: var(--bg-color-red);
 }
 
 .plan-btn-wrapper {

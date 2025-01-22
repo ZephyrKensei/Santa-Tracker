@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/d873a46b46.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="./CSS/default.css">
     <link rel="stylesheet" href="./CSS/styles.css">
     <link rel="stylesheet" href="./CSS/mobile.css">
@@ -46,9 +46,7 @@
       <div class="container">
         <div class="hero-wrapper">
           <div class="hero-header">
-            <h1 class="hero-header">
-            AI-Powered Blockchain for Effortless Gift Management
-            </h1>
+            <h1>AI-Powered Blockchain For Effortless Gift Management</h1>
             <p>Scaling holiday logistics through a decentralized proof-of-work protocol with autonomous LLM-powered agents.</p>
           </div>
           <button aria-label="Try GiftChain.ai for free"
@@ -61,52 +59,64 @@
     </header>
 
     <!-- Platform -->
-    <div class="key-benefits">
-        <h2>Everything Santa's Need In One Platform</h2>
-        <p class="best">We automated Santa's job and added it to the blockchain so that you don’t have to do it.</p>
-    </div>
+    <section class="key-benefits">
+      <div class="container">
+        <div class="platform-text">
+          <h2>Everything Santa's Need In One Platform</h2>
+          <p class="best">We automated Santa's job and added it to the blockchain so that you don’t have to do it.</p>
+        </div>
+      </div>  
 
-    <section class="benefits">
+      <div class="benefits">
         <div class="key-block">
-        <img class="icon" src="./assets/icons/responsive.svg" alt="Mobile Devices">
-        <h3>On-chain Record</h3>
-        <p>Each gift is minted as an NFT on our decentralized protocol, creating a permanent, tamper-proof record.</p>
-        <a href="#on-chain-record" aria-label="Learn more about on-chain records">Learn more</a>
+          <img class="icon" src="assets/icons/icons8-charts-60.png" alt="Mobile Devices">
+          <h3>On-chain Record</h3>
+          <p>Each gift is minted as an NFT on our decentralized protocol, creating a permanent, tamper-proof record.</p>
+          <a href="#on-chain-record" aria-label="Learn more about on-chain records">Learn more</a>
         </div>
 
         <div class="key-block">
-        <img class="icon" src="./assets/icons/customizable.svg" alt="Mobile Devices">
-        <h3>AI Gift Ideas</h3>
-        <p>Input a child’s behavior and interest, and our LLM-powered AI agent will generate the perfect gift.</p>
-        <a href="#ai-gift-ideas" aria-label="Learn more about AI gift ideas">Learn more</a>
+          <img class="icon" src="assets/icons/icons8-web-50.png" alt="Mobile Devices">
+          <h3>AI Gift Ideas</h3>
+          <p>Input a child’s behavior and interest, and our LLM-powered AI agent will generate the perfect gift.</p>
+          <a href="#ai-gift-ideas" aria-label="Learn more about AI gift ideas">Learn more</a>
         </div>
 
         <div class="key-block">
-        <img class="icon" src="./assets/icons/premium.svg" alt="Mobile Devices">
-        <h3>Sleigh Optimization</h3>
-        <p>Smart contracts and AI combined to automate global gift delivery logistics, optimizing your routes for efficiency.</p>
-        <a href="#sleigh-optimization" aria-label="Learn more about sleigh optimization">Learn more</a>
+          <img class="icon" src="assets/icons/icons8-settings-64.png" alt="Mobile Devices">
+          <h3>Sleigh Optimization</h3>
+          <p>Smart contracts and AI combined to automate global gift delivery logistics, optimizing your routes for efficiency.</p>
+          <a href="#sleigh-optimization" aria-label="Learn more about sleigh optimization">Learn more</a>
         </div>
 
         <div class="key-block">
-        <img class="icon" src="./assets/icons/documentation.svg" alt="Mobile Devices">
-        <h3>Full Observability</h3>
-        <p>We monitor every child's behavior year-round, tracking every good and bad deed with zero downtime.</p>
-         <a href="#full-observability" aria-label="Learn more about full observability">Learn more</a>
+          <img class="icon" src="assets/icons/icons8-web-64.png" alt="Mobile Devices">
+          <h3>Full Observability</h3>
+          <p>We monitor every child's behavior year-round, tracking every good and bad deed with zero downtime.</p>
+          <a href="#full-observability" aria-label="Learn more about full observability">Learn more</a>
         </div>
+      </div>
     </section>
 
+
     <!-- Solution -->
-    <section id="solution">
-       <h2>Say goodbye to gift chaos this year</h2>
-        <p>No need to worry about your gift being lost or delivered to the wrong child. We’ll handle every single one.</p>
-        <p>More than 10,000 elves have tried GiftChain.ai!</p>
-        <button aria-label="Try GiftChain.ai for free">Try for free</button>
-        <img src="./assets/dashboard.png" alt="Dashboard screenshot of GiftChain.ai" class="hero-dashboard-img">
+    <section class="solution">
+      <div class="container">
+        <div class="ellipse"><img src="assets/icons/Ellipse 265.png" alt="ellipse"></div>
+        <div class="sol-section">
+          <h2>Say goodbye to gift chaos this year</h2>
+          <p>No need to worry about your gift being lost or delivered to the wrong child. We’ll handle every single one.</p>
+          <p>More than 10,000 elves have tried GiftChain.ai!</p>
+          <button class="btn btn-primary" aria-label="Try GiftChain.ai for free">Try for free</button>
+        </div>
+        <div class="sol-section">
+          <img src="./assets/dashboard.png" alt="Dashboard screenshot of GiftChain.ai" class="sol-dashboard-img">
+        </div>
+      </div>
     </section>
 
     <!-- Pricing -->
-    <section id="pricing" class="bg-contrast">
+    <section id="pricing">
       <div class="block pricing-header">
         <h2>Choose The Right Package For You</h2>
         <p>Pay securely online and manage the booking via desktop or our in-sleigh app.</p>
@@ -121,24 +131,32 @@
           <hr>
           <ul>
             <li>
-              <span class="title">10+ collections</span>
+              <span class="icon"><i class="fa-solid fa-circle-check"></i></span>
+              <span class="title">50+ collections</span>
+            </li>
+            <li>
+              <span class="icon"><i class="fa-solid fa-circle-check"></i></span>
+              <span class="title">Accessibility limited to Continent</span>
+            </li>
+            <li>
+              <span class="icon"><i class="fa-solid fa-circle-check"></i></span>
+              <span class="title">100+ automation actions</span>
+            </li>
+            <li>
+              <span class="icon"><i class="fa-solid fa-circle-check"></i></span>
+              <span class="title">24-hour support</span>
+            </li>
+            <li>
               <span class="icon"><i class="fas fa-times"></i></span>
-            </li>
-            <li>
-              <span class="title">Worldwide accessability</span>
-              <span class="icon"><i class="fas fa-check"></i></span>
-            </li>
-            <li>
-              <span class="title">25+ automation actions</span>
-              <span class="icon"><i class="fas fa-times"></i></span>
-            </li>
-            <li>
               <span class="title">Limited features</span>
-              <span class="icon"><i class="fas fa-times"></i></span>
             </li>
             <li>
-              <span class="title">Community Support</span>
-              <span class="icon"><i class="fas fa-check"></i></span>
+              <span class="icon"><i class="fas fa-times"></i></span>
+              <span class="title">Sync across devices</span>
+            </li>
+            <li>
+              <span class="icon"><i class="fas fa-times"></i></span>
+              <span class="title">Share with multiple users</span>
             </li>
           </ul>
           <div class="plan-btn-wrapper">
@@ -154,32 +172,36 @@
           <hr>
           <ul>
             <li>
+              <span class="icon"><i class="fa-solid fa-circle-check"></i></span>
               <span class="title">Unlimited collections</span>
-              <span class="icon checked"><i class="fas fa-check"></i></span>
             </li>
             <li>
+              <span class="icon"><i class="fa-solid fa-circle-check"></i></span>
               <span class="title">Worldwide accessibility</span>
-              <span class="icon checked"><i class="fas fa-check"></i></span>
             </li>
             <li>
+              <span class="icon"><i class="fa-solid fa-circle-check"></i></span>
               <span class="title">Unlimited automation actions</span>
-              <span class="icon checked"><i class="fas fa-check"></i></span>
             </li>
             <li>
-              <span class="title">Access all features</span>
-              <span class="icon times"><i class="fas fa-times"></i></span>
-            </li>
-            <li>
+              <span class="icon"><i class="fa-solid fa-circle-check"></i></span>
               <span class="title">24-hour support</span>
-              <span class="icon times"><i class="fas fa-times"></i></span>
             </li>
             <li>
+              <span class="icon"><i class="fa-solid fa-circle-check"></i></span>
+              <span class="title">Access all features</span>
+            </li>
+            <li>
+              <span class="icon"><i class="fa-solid fa-circle-check"></i></span>
               <span class="title">Sync across devices</span>
-              <span class="icon times"><i class="fas fa-times"></i></span>
+            </li>
+            <li>
+              <span class="icon"><i class="fas fa-times"></i></span>
+              <span class="title">Share with multiple users</span>
             </li>
           </ul>
           <div class="plan-btn-wrapper">
-            <a href="#" class="btn btn-white">Select Plan</a>
+            <a href="#" class="btn btn-primary">Select Plan</a>
           </div>
         </div>
         
@@ -191,32 +213,32 @@
           <hr>
           <ul>
             <li>
+              <span class="icon"><i class="fa-solid fa-circle-check"></i></span>
               <span class="title">Unlimited collections</span>
-              <span class="icon checked"><i class="fas fa-check"></i></span>
             </li>
             <li>
+              <span class="icon"><i class="fa-solid fa-circle-check"></i></span>
               <span class="title">Worldwide accessibility</span>
-              <span class="icon checked"><i class="fas fa-check"></i></span>
             </li>
             <li>
+              <span class="icon"><i class="fa-solid fa-circle-check"></i></span>
               <span class="title">Unlimited automation actions</span>
-              <span class="icon checked"><i class="fas fa-check"></i></span>
             </li>
             <li>
-              <span class="title">Access all features</span>
-              <span class="icon times"><i class="fas fa-times"></i></span>
-            </li>
-            <li>
+              <span class="icon"><i class="fa-solid fa-circle-check"></i></span>
               <span class="title">24-hour support</span>
-              <span class="icon times"><i class="fas fa-times"></i></span>
             </li>
             <li>
+              <span class="icon"><i class="fa-solid fa-circle-check"></i></span>
+              <span class="title">Access all features</span>
+            </li>
+            <li>
+              <span class="icon"><i class="fa-solid fa-circle-check"></i></span>
               <span class="title">Sync across devices</span>
-              <span class="icon times"><i class="fas fa-times"></i></span>
             </li>
             <li>
+              <span class="icon"><i class="fa-solid fa-circle-check"></i></span>
               <span class="title">Share with multiple users</span>
-              <span class="icon times"><i class="fas fa-times"></i></span>
             </li>
           </ul>
           <div class="plan-btn-wrapper">

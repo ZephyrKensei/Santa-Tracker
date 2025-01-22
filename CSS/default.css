@@ -1,14 +1,11 @@
 :root {
   --white: #fff;
   --font-color-dark: #212529;
-  --font-color-link: #57a6ff;
+  --font-color-light: #666;
   --font-color-red: #470000;
   --bg-color-red: #8f0002d4;
   --footer: #34314b;
   --footer-base: #2e2b45;
-  --contrast: rgba(246, 248, 249, 0.8);
-  --success: #64ecf5;
-  --danger: #ff8b8d;
 
   --size10: 0.625rem;
   --size14: 0.875rem;
@@ -51,7 +48,8 @@ ul {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
+  color: var(--font-color-red);
 }
 
 p {
@@ -102,14 +100,16 @@ img {
 .btn-primary {
   background-color: var(--bg-color-red);
   border: 1px solid var(--white);
-  box-shadow: 0 10px 20px rgba(162, 236, 255, 0.5);
   color: var(--white);
 }
 
 .btn-white {
   background-color: var(--white);
   color: var(--font-color-red);
-  box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.35);
+}
+
+.btn:hover {
+  box-shadow: 0 5px 5px rgba(162, 236, 255, 0.5);
 }
 
 @media (min-width: 768px) {
