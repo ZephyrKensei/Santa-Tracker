@@ -207,13 +207,7 @@
 
 /* Testimonials */
 
-.test {
-  margin: var(--size100) 0;
-}
-
 .test .block {
-  padding-right: 0;
-  text-align: center;
   margin: var(--size100) 0;
 }
 
@@ -243,7 +237,8 @@
 .test-card .top {
   display: flex;
   align-items: center;
-  padding-bottom: var(--size10);
+  padding-bottom: var(--size20);
+  text-align: left;
 }
 
 .test-card img.profile {
@@ -271,7 +266,7 @@
 
 .bottom p {
   margin: 0;
-  font-size: var(--size16);
+  font-size: var(--size14);
   line-height: 1.6;
 }
 
